@@ -1,4 +1,4 @@
-export const API_BASE_URL = "http://127.0.0.1:8000";
+export const API_BASE_URL = "https://ai-ajent.onrender.com";
 const CHAT_TIMEOUT_MS = 60000;
 const HEALTH_TIMEOUT_MS = 5000;
 
