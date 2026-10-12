@@ -37,7 +37,7 @@ export async function sendChatMessage(message) {
       throw new ApiError("The request took too long. Please try again.");
     }
     throw new ApiError(
-      "Could not reach the PyMate AI backend. Make sure the backend server is running at http://127.0.0.1:8000.",
+      "Could not reach the PyMate AI backend. Make sure the backend server is running at https://ai-ajent.onrender.com0.",
       { network: true }
     );
   } finally {

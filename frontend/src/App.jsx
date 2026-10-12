@@ -27,7 +27,7 @@ function StatusPill({ online }) {
       ? "Backend online"
       : "Backend offline";
   const title =
-    state === "offline" ? "Start the backend at http://127.0.0.1:8000" : undefined;
+    state === "offline" ? "Start the backend at https://ai-ajent.onrender.com" : undefined;
 
   return (
     <span className={`status-pill ${state}`} role="status" title={title}>
