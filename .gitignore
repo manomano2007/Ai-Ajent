@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.pytest_cache/
+
+# Secret files
+.env
+**/.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+**/node_modules/
+frontend/dist/
