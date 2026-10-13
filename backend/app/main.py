@@ -24,11 +24,15 @@ settings = get_settings()
 
 app = FastAPI(title="PyMate AI Backend", version="0.3.0")
 
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[settings.frontend_origin],
+    allow_origins=[
+        settings.frontend_origin,
+        "https://ai-agent-226h9vajl-manomanovk-6865s-projects.vercel.app",
+    ],
     allow_credentials=False,
-    allow_methods=["GET", "POST"],
+    allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["Content-Type"],
 )
 
